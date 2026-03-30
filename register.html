@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - JUSTEMARKET</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="particles"></div>
+    
+    <header class="glass-header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-3d">
+                    <span class="logo-icon">🛍️</span>
+                    <span class="logo-text">JUSTEMARKET</span>
+                </div>
+            </div>
+            <nav>
+                <a href="index.html">Accueil</a>
+                <a href="login.html">Connexion</a>
+                <a href="register.html" class="active">Inscription</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h2>📝 Créer ma boutique</h2>
+            <p class="subtitle">Rejoignez la marketplace de Foumban</p>
+            
+            <form id="registerForm">
+                <div class="form-group">
+                    <label>🏪 Nom de la boutique *</label>
+                    <input type="text" id="businessName" required placeholder="Ex: Boutique Aicha">
+                </div>
+                <div class="form-group">
+                    <label>👤 Votre nom complet *</label>
+                    <input type="text" id="ownerName" required placeholder="Ex: Aicha M.">
+                </div>
+                <div class="form-group">
+                    <label>📞 Téléphone (pour recevoir votre clé) *</label>
+                    <input type="tel" id="phone" required placeholder="6XXXXXXXXX">
+                </div>
+                <div class="form-group">
+                    <label>📧 Email (optionnel)</label>
+                    <input type="email" id="email" placeholder="exemple@email.com">
+                </div>
+                <div class="form-group">
+                    <label>🔑 Mot de passe *</label>
+                    <input type="password" id="password" required placeholder="••••••••">
+                </div>
+                <div class="form-group">
+                    <label>📦 Type d'activité</label>
+                    <select id="activity">
+                        <option value="small">Petit commerce - 1 000 FCFA/mois</option>
+                        <option value="medium">Boutique moyenne - 2 500 FCFA/mois</option>
+                        <option value="large">Grand commerce - 5 000 FCFA/mois</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary" style="width:100%;">Continuer vers paiement</button>
+            </form>
+            
+            <p class="link">Déjà inscrit ? <a href="login.html">Se connecter</a></p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

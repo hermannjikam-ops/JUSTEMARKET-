@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - JUSTEMARKET</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="particles"></div>
+    
+    <header class="glass-header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-3d">
+                    <span class="logo-icon">👑</span>
+                    <span class="logo-text">JUSTEMARKET ADMIN</span>
+                </div>
+                <p class="tagline">Panel de contrôle - Lejuste</p>
+            </div>
+            <nav>
+                <a href="admin.html" class="active">Dashboard</a>
+                <a href="index.html">Voir le site</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="stats-dashboard">
+            <div class="stat-card">
+                <div class="number" id="totalMerchants">0</div>
+                <div>Commerçants</div>
+            </div>
+            <div class="stat-card">
+                <div class="number" id="totalRevenue">0</div>
+                <div>FCFA / mois</div>
+            </div>
+            <div class="stat-card">
+                <div class="number" id="activeSubscriptions">0</div>
+                <div>Abonnements actifs</div>
+            </div>
+        </div>
+
+        <div class="admin-actions" style="display: flex; gap:15px; margin-bottom:30px; flex-wrap:wrap;">
+            <button onclick="exportData()" class="btn-outline">📊 Exporter les données</button>
+            <button onclick="showAddMerchant()" class="btn-primary">➕ Ajouter un commerçant</button>
+            <button onclick="clearAllData()" class="btn-outline" style="border-color: #e74c3c; color:#e74c3c;">🗑️ Effacer toutes les données</button>
+        </div>
+
+        <!-- Section demandes en attente -->
+        <div style="margin: 40px 0;">
+            <h3>⏳ Demandes de clés en attente</h3>
+            <div id="pendingRequests" class="requests-list"></div>
+        </div>
+
+        <h3>📋 Liste des commerçants actifs</h3>
+        <div id="merchantsList" class="merchants-list"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
