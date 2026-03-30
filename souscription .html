@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paiement - JUSTEMARKET</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="particles"></div>
+    
+    <header class="glass-header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-3d">
+                    <span class="logo-icon">🛍️</span>
+                    <span class="logo-text">JUSTEMARKET</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h2>💳 Paiement de l'abonnement</h2>
+            
+            <div id="planInfo"></div>
+
+            <div class="payment-info" style="background: rgba(230,126,34,0.1); padding: 20px; border-radius: 16px; margin: 20px 0;">
+                <h3 style="color: #e67e22;">📱 Comment payer ?</h3>
+                <p style="margin: 10px 0;">1️⃣ Envoyez le montant par <strong>Orange Money</strong> ou <strong>MTN Mobile Money</strong> au :</p>
+                <h2 style="text-align: center; margin: 15px 0; font-size: 28px;">📞 <span id="lejustePhone">6XX XXX XXX</span></h2>
+                <p>2️⃣ Prenez une capture d'écran du paiement</p>
+                <p>3️⃣ Envoyez-la sur WhatsApp au <strong id="lejusteWhatsApp">672972870</strong></p>
+                <p>4️⃣ Vous recevrez votre <strong>clé d'accès</strong> immédiatement</p>
+            </div>
+
+            <div class="form-group">
+                <label>📝 Code de transaction (optionnel pour accélérer)</label>
+                <input type="text" id="transactionCode" placeholder="Ex: ORG123456789" class="form-control">
+            </div>
+
+            <div class="alert alert-warning" style="background: rgba(243,156,18,0.1); border-color: #f39c12; padding: 15px; border-radius: 12px; margin: 15px 0;">
+                <p>⚠️ <strong>Important :</strong> Après paiement, contactez Lejuste sur WhatsApp pour recevoir votre clé instantanément.</p>
+                <p>⏱️ Délai d'activation : moins de 5 minutes.</p>
+            </div>
+
+            <button onclick="requestKey()" class="btn-primary" style="width:100%;">📲 J'ai payé, recevoir ma clé</button>
+
+            <div id="keyMessage" style="display:none; margin-top: 20px; padding: 15px; background: rgba(76,175,80,0.1); border-radius: 12px; text-align: center;">
+                <p>✅ Demande envoyée à Lejuste !</p>
+                <p>Vous recevrez votre clé par WhatsApp dans quelques instants.</p>
+                <p class="link" style="margin-top: 10px;"><a href="login.html">Retour à la connexion</a></p>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

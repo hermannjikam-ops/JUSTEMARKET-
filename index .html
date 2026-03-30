@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>JUSTEMARKET - La marketplace de Foumban</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="particles"></div>
+    
+    <header class="glass-header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-3d">
+                    <span class="logo-icon">🛍️</span>
+                    <span class="logo-text">JUSTEMARKET</span>
+                </div>
+                <p class="tagline">Tout Foumban dans votre poche</p>
+            </div>
+            <nav>
+                <a href="index.html" class="active">Accueil</a>
+                <a href="login.html">Connexion</a>
+                <a href="register.html" class="btn-nav">Créer ma boutique</a>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-3d">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="pulse">🔥 La première marketplace de Foumban</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-gradient">Vendez en ligne</span>
+                <br>à Foumban
+            </h1>
+            <p class="hero-description">Rejoignez des milliers de clients et développez votre activité avec JUSTEMARKET. Créez votre boutique en quelques minutes.</p>
+            <div class="hero-buttons">
+                <a href="register.html" class="btn-primary btn-3d">
+                    <i class="fas fa-rocket"></i> Créer ma boutique
+                </a>
+                <a href="#offers" class="btn-outline">
+                    <i class="fas fa-arrow-down"></i> Voir les offres
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Commerçants</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">1000+</span>
+                    <span class="stat-label">Commandes</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">10k+</span>
+                    <span class="stat-label">Clients</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-3d-model">
+            <div class="floating-card card-1">
+                <i class="fas fa-store"></i>
+                <span>Boutique en ligne</span>
+            </div>
+            <div class="floating-card card-2">
+                <i class="fas fa-truck"></i>
+                <span>Livraison rapide</span>
+            </div>
+            <div class="floating-card card-3">
+                <i class="fas fa-mobile-alt"></i>
+                <span>Mobile Money</span>
+            </div>
+            <div class="hero-phone-mockup">
+                <div class="phone-screen">
+                    <div class="phone-app">
+                        <span>🛍️ JUSTEMARKET</span>
+                        <div class="phone-product"></div>
+                        <div class="phone-product"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="offers" class="offers-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Tarifs</span>
+                <h2>Choisissez l'abonnement qui vous correspond</h2>
+                <p>Des offres adaptées à tous les commerçants de Foumban</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card" data-tier="small">
+                    <div class="card-glow"></div>
+                    <div class="card-icon">🏪</div>
+                    <h3>Petit commerce</h3>
+                    <div class="price">
+                        <span class="currency">FCFA</span>
+                        <span class="amount">1 000</span>
+                        <span class="period">/mois</span>
+                    </div>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> Jusqu'à 50 produits</li>
+                        <li><i class="fas fa-check"></i> Gestion des commandes</li>
+                        <li><i class="fas fa-check"></i> Support WhatsApp</li>
+                        <li><i class="fas fa-check"></i> Statistiques de base</li>
+                    </ul>
+                    <a href="register.html?plan=small" class="btn-card">Commencer</a>
+                </div>
+
+                <div class="pricing-card popular" data-tier="medium">
+                    <div class="popular-badge">⭐ Populaire</div>
+                    <div class="card-glow"></div>
+                    <div class="card-icon">🏬</div>
+                    <h3>Boutique moyenne</h3>
+                    <div class="price">
+                        <span class="currency">FCFA</span>
+                        <span class="amount">2 500</span>
+                        <span class="period">/mois</span>
+                    </div>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> Jusqu'à 200 produits</li>
+                        <li><i class="fas fa-check"></i> Gestion avancée</li>
+                        <li><i class="fas fa-check"></i> Support prioritaire</li>
+                        <li><i class="fas fa-check"></i> Statistiques avancées</li>
+                        <li><i class="fas fa-check"></i> Mise en avant</li>
+                    </ul>
+                    <a href="register.html?plan=medium" class="btn-card primary">Commencer</a>
+                </div>
+
+                <div class="pricing-card" data-tier="large">
+                    <div class="card-glow"></div>
+                    <div class="card-icon">🏭</div>
+                    <h3>Grand commerce</h3>
+                    <div class="price">
+                        <span class="currency">FCFA</span>
+                        <span class="amount">5 000</span>
+                        <span class="period">/mois</span>
+                    </div>
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> Produits illimités</li>
+                        <li><i class="fas fa-check"></i> Gestion complète</li>
+                        <li><i class="fas fa-check"></i> Support dédié 24/7</li>
+                        <li><i class="fas fa-check"></i> Export PDF/Excel</li>
+                        <li><i class="fas fa-check"></i> API personnalisée</li>
+                    </ul>
+                    <a href="register.html?plan=large" class="btn-card">Commencer</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Guide</span>
+                <h2>Comment créer votre boutique ?</h2>
+                <p>3 étapes simples pour vendre en ligne à Foumban</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">📝</div>
+                    <h3>Inscription</h3>
+                    <p>Créez votre compte gratuitement en 2 minutes</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">💳</div>
+                    <h3>Paiement</h3>
+                    <p>Payez par Mobile Money et recevez votre clé</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">🚀</div>
+                    <h3>Vendez !</h3>
+                    <p>Ajoutez vos produits et commencez à vendre</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Témoignages</span>
+                <h2>Ils nous font confiance</h2>
+                <p>Des commerçants satisfaits à Foumban</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">👩</div>
+                    <div class="testimonial-content">
+                        <p>"Grâce à JUSTEMARKET, mes ventes ont augmenté de 40% !"</p>
+                        <h4>Aicha - Boutique de tissus</h4>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">👨</div>
+                    <div class="testimonial-content">
+                        <p>"La plateforme est simple et efficace. Je recommande !"</p>
+                        <h4>Yannick - Phone Doctor</h4>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">👩</div>
+                    <div class="testimonial-content">
+                        <p>"Un service client exceptionnel et des résultats rapides."</p>
+                        <h4>Maman Awa - Restauration</h4>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="cta-3d-bg"></div>
+        <div class="container">
+            <h2>Prêt à développer votre activité ?</h2>
+            <p>Rejoignez la première marketplace de Foumban dès aujourd'hui</p>
+            <a href="register.html" class="btn-primary btn-large btn-3d">
+                <i class="fas fa-store"></i> Créer ma boutique maintenant
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>🛍️ JUSTEMARKET</h3>
+                    <p>La première marketplace de Foumban. Vendez et achetez en ligne facilement.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="login.html">Connexion</a></li>
+                        <li><a href="register.html">Inscription</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +237 6XX XXX XXX</li>
+                        <li><i class="fas fa-envelope"></i> contact@justemarket.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Foumban, Cameroun</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 JUSTEMARKET - Tous droits réservés | Créé par Lejuste</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

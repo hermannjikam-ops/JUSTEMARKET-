@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma boutique - JUSTEMARKET</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="particles"></div>
+    
+    <header class="glass-header">
+        <div class="container">
+            <div class="logo">
+                <div class="logo-3d">
+                    <span class="logo-icon">🛍️</span>
+                    <span class="logo-text">JUSTEMARKET</span>
+                </div>
+            </div>
+            <nav>
+                <a href="dashboard.html" class="active">Tableau de bord</a>
+                <a href="#" onclick="logout()">Déconnexion</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="dashboard-header">
+            <h2>🏪 <span id="businessName"></span></h2>
+            <div class="status-badge" id="statusBadge">✅ Abonnement actif</div>
+        </div>
+
+        <div class="stats-dashboard">
+            <div class="stat-card">
+                <div class="number" id="totalProducts">0</div>
+                <div>Produits</div>
+            </div>
+            <div class="stat-card">
+                <div class="number" id="totalOrders">0</div>
+                <div>Commandes</div>
+            </div>
+            <div class="stat-card">
+                <div class="number" id="totalRevenue">0</div>
+                <div>FCFA (CA)</div>
+            </div>
+        </div>
+
+        <div class="dashboard-tabs">
+            <button class="tab-btn active" onclick="showTab('products')">📦 Mes produits</button>
+            <button class="tab-btn" onclick="showTab('orders')">📋 Commandes</button>
+            <button class="tab-btn" onclick="showTab('settings')">⚙️ Paramètres</button>
+        </div>
+
+        <div id="productsTab" class="tab-content active">
+            <button class="btn-outline" onclick="showAddProduct()">➕ Ajouter un produit</button>
+            
+            <div id="addProductForm" style="display:none; margin-top:20px;">
+                <h3>Nouveau produit</h3>
+                <input type="text" id="productName" placeholder="Nom du produit" class="form-group" style="width:100%; margin-bottom:10px;">
+                <input type="number" id="productPrice" placeholder="Prix (FCFA)" class="form-group" style="width:100%; margin-bottom:10px;">
+                <input type="number" id="productStock" placeholder="Stock" class="form-group" style="width:100%; margin-bottom:10px;">
+                <button onclick="addProduct()" class="btn-primary">Ajouter</button>
+            </div>
+
+            <div id="productsList" class="products-list"></div>
+        </div>
+
+        <div id="ordersTab" class="tab-content">
+            <div id="ordersList"></div>
+        </div>
+
+        <div id="settingsTab" class="tab-content">
+            <h3>🔑 Informations de votre boutique</h3>
+            <p><strong>Clé d'accès :</strong> <span id="displayAccessKey"></span></p>
+            <p><strong>Abonnement expire le :</strong> <span id="expiryDate"></span></p>
+            <p><strong>Type d'abonnement :</strong> <span id="planType"></span></p>
+            <button class="btn-outline" onclick="renewSubscription()">🔄 Renouveler l'abonnement</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
